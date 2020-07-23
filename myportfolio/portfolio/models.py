@@ -1,5 +1,6 @@
 from django.db import models
-from  mongoengine import Document, EmbeddedDocument, fields
+
+
 # from django.contrib.auth import get_user_model
 # from django.db.models.loading import cache as model_cache
 # if not model_cache.loaded:

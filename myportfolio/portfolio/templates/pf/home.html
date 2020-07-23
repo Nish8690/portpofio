@@ -1,47 +1,33 @@
 {% extends 'pf/base.html' %}
 
 {% load static %}
-
+{% block title%}HOME{% endblock title%}
 {% block content %}
 
 <br>
 <br>
 <div class="banner">
-    <!--      <div class="landing-grid">-->
+
 
     <img alt="..." class="avtar-img" id="profile-pic1"
          src="https://www.shareicon.net/data/2015/09/24/106427_man_512x512.png"/></div>
 <br>
 
-    <div class="banner-text">
-        <h1>Full Stack Web Developer</h1>
+<div class="banner-text"><br>
+    <h1>Full Stack Web Developer</h1>
 
-        <hr/>
-        <p>HTML/CSS | Bootstrap | JavaScript | React | React Native | NodeJS | Express | MongoDB</p></div>
+    <hr/>
+    <p>HTML/CSS | Bootstrap | JavaScript | React | React Native | NodeJS | Express | MongoDB</p>
 
-<!--        <div class="social-linkss">-->
-            <!--            <a href="http://google.com" rel="noopener noreferrer" target="_blank">-->
-            <!--                <i classNAME="fa fa-linkedin-square" aria-hidden="true"/></a>-->
-
-       <br>  <div class="container mx-200px">
-            <ul class="social-links">
-                <li><img class="social" src="{% static 'pf/images/facebook.png' %}"></li>
-                <li><img class="social" src="{% static 'pf/images/linkedin.png' %}"></li>
-                <li><img class="social" src="{% static 'pf/images/twitter.png' %}"></li>
-                <li><img class="social" src="{% static 'pf/images/youtube.png' %}"></li>
-            </ul></div>
-
-<!--    </div>-->
+    <div class="container-fluid" style="background:white;  display:inline-block;">
+        <ul>
+            <li><img class="social" src="{% static 'pf/images/facebook.png' %}"></li>
+            <li><img class="social" src="{% static 'pf/images/linkedin.png' %}"></li>
+            <li><img class="social" src="{% static 'pf/images/twitter.png' %}"></li>
+            <li><img class="social" src="{% static 'pf/images/youtube.png' %}"></li>
+        </ul>
+    </div>
+</div>
 
 
 {% endblock content%}
-
-
-<!--        </div>-->
-<!--        <div class="col-md-8">-->
-<!--          <div class="card-body">-->
-<!--            <h5 class="card-title">Nishant Shah</h5>-->
-<!--            <p class="banner-text"><h1>I AM</h1>I'm a Data Science enthusiast who loves to play with machine learning.</p>-->
-<!--            <p>Click the link below to know about me!</p>-->
-<!--            <a href="https://www.linkedin.com/in/shah-0806/" class="btn btn-primary" target="_blank">Linkedin</a>-->
-<!--          </div>-->

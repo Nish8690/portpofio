@@ -1,154 +1,49 @@
 {% extends 'pf/base.html' %}
 
 {% load static %}
-
+{% block title%}CONTACT ME{% endblock title%}
 {% block content %}
-<!--      <div class="contact-body">-->
-<!--        <Grid class="contact-grid">-->
-<!--          <div col={6}>-->
-<!--            <h2>Paul Hanna</h2>-->
-<!--            <img-->
-<!--              src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/Fred_man-512.png"-->
-<!--              alt="avatar"-->
-<!--              style="height:'250px'"/>-->
-<!--             <p style="width: '75%', margin: 'auto', paddingTop: '1em'">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>-->
 
-<!--          </div>-->
-<!--          <div col={6}>-->
-<!--            <h2>Contact Me</h2>-->
-<!--            <hr/>-->
-
-<!--            <div class="contact-list">-->
-<!--              <List>-->
-<!--                <li>-->
-<!--                  <liContent style="fontSize: '20px', fontFamily: 'Anton'">-->
-<!--                    <i className="fa fa-phone-square" aria-hidden="true"/>-->
-<!--                    (123) 456-7890-->
-<!--                  </liContent>-->
-<!--                </li>-->
-
-<!--                <li>-->
-<!--                  <liContent style="fontSize: '20px', fontFamily: 'Anton'">-->
-<!--                    <i className="fa fa-fax" aria-hidden="true"/>-->
-<!--                    (123) 456-7890-->
-<!--                  </liContent>-->
-<!--                </li>-->
-
-<!--                <li>-->
-<!--                  <liContent style="fontSize: '20px', fontFamily: 'Anton'">-->
-<!--                    <i className="fa fa-envelope" aria-hidden="true"/>-->
-<!--                    someone@example.com-->
-<!--                  </liContent>-->
-<!--                </li>-->
-
-<!--                <li>-->
-<!--                  <liContent style="fontSize: '20px', fontFamily: 'Anton'">-->
-<!--                    <i className="fa fa-skype" aria-hidden="true"/>-->
-<!--                    MySkypeID-->
-<!--                  </liContent>-->
-<!--                </li>-->
-
-
-<!--              </List>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </Grid>-->
-<!--      </div>-->
-<!--    )-->
-<!--  }-->
-<!--}-->
-
-<!--<br>-->
-<!--<div class="wrapper">-->
-<!--    <div>-->
-<!--        <h2>Paul Hanna</h2>-->
-<!--        <img-->
-<!--                src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/Fred_man-512.png"-->
-<!--                alt="avatar"-->
-<!--                style="height:'250px'"/>-->
-<!--        <p style="width: '75%', margin: 'auto', paddingTop: '1em'">Lorem Ipsum is simply dummy text of the printing and-->
-<!--            typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an-->
-<!--            unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not-->
-<!--            only five centuries</p>-->
-
-<!--    </div>-->
-
-<!--    <div class="contact-grid">-->
-<!--        <h2>Contact Me </h2>-->
-<!--        <hr/>-->
-
-<!--        <div class="contact-list">-->
-<!--            <List><br>-->
-<!--                <li>-->
-<!--                        <li><img class="social ml-2 mr-5 mt-0" src="{% static 'pf/images/facebook.png' %}"></li>-->
-<!--                         <i className="fa fa-fax mt-2" aria-hidden="true"/>-->
-<!--                        (123) 456-7890-->
-
-<!--                </li><br>-->
-
-<!--                <li>-->
-<!--  <li><img class="social ml-2 mr-5 mt-0" src="{% static 'pf/images/facebook.png' %}"></li>-->
-<!--                        <i className="fa fa-fax" aria-hidden="true"/>-->
-<!--                        (123) 456-7890-->
-
-<!--                </li><br>-->
-
-
-<!--                <li>-->
-<!--                      <li><img class="social ml-2 mr-5 mt-0" src="{% static 'pf/images/facebook.png' %}"></li>-->
-<!--                        <i className="fa fa-skype" aria-hidden="true"/>-->
-<!--                        MySkypeID-->
-<!--                </li><br>-->
-<!--                                <li>-->
-<!--                      <li><img class="social ml-2 mr-5 mt-0" src="{% static 'pf/images/facebook.png' %}"></li>-->
-<!--                        <i className="fa fa-envelope" aria-hidden="true"/>-->
-<!--                        <h3>nishant.shah0806@gmail.com</h3>-->
-<!--                </li>-->
-<!--            </List>-->
-<!--        </div>-->
-
-
-<!--    </div>-->
-<!--</div>-->
-<!--<div class="wrapper">-->
 <div class="contact-body">
     <div class="contact-grid">
-<!--        <div class="wrapper">-->
-            <div class="col-6" style="width: 90%; float:left"><br>
-                <h2>Paul Hanna</h2><br>
-                <img id="profile-pic2"
-                     src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/Fred_man-512.png"
-                     alt="avatar"/><br><br>
-                <p style="width: '60%', margin: '10%', paddingTop: '1em'">Lorem Ipsum is simply dummy text of the
-                    printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
-                    not only five centuries</p>
-            </div>
+        <!--        <div class="wrapper">-->
+        <div class="col-6" style="width: 90%; float:left"><br>
+            <h2>Nishant Shah</h2><br>
+            <img alt="avatar"
+                 id="profile-pic2"
+                 src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/Fred_man-512.png"/><br><br>
+            <p style="width: '60%', margin: '10%', paddingTop: '1em'">Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
+                the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                survived
+                not only five centuries</p>
+        </div>
+        <br>
+        <div class="col-6" style="width: 110%; float:right"><h2>Contact Me</h2>
+            <hr>
             <br>
-            <div class="col-6" style="width: 110%; float:right"><h2>Contact Me</h2><hr>
-                <br>
-                <li>
-                <li><img class="social mr-5 pl-0" src="{% static 'pf/images/facebook.png' %}"></li>
-                <i className="fa fa-fax mt-2" aria-hidden="true"/>
+            <ul>
+                <li><img class="social mr-7 pl-0 ml-3" src="{% static 'pf/images/call.png' %}"></li>
+                <i aria-hidden="true" className="fa fa-fax mt-2"/>
                 +49 177-6844-736
                 <br><br>
-                <li><img class="social mr-5 pl-0" src="{% static 'pf/images/facebook.png' %}"></li>
-                <i className="fa fa-fax mt-2" aria-hidden="true"/>
-                +49 177-6844-736
+                <li><img class="social mr-2 pl-0 ml-1" src="{% static 'pf/images/linkedin2.png' %}"></li>
+                <i aria-hidden="true" className="fa fa-fax mt-2"/>
+                <h8>linkedin.com/in/shah-0806/</h8>
                 <br><br>
-                <li><img class="social mr-5 pr-5 pl-0" style="text-align:left" src="{% static 'pf/images/facebook.png' %}"></li>
-                <i className="fa fa-fax mt-2" aria-hidden="true"/>
-                My Skype ID
+                <li><img class="social mr-5 pl-0 ml-2" src="{% static 'pf/images/skype.png' %}" style="text-align:left">
+                </li>
+                <i aria-hidden="true" className="fa fa-fax mt-2"/>
+                live:nishant.shah0806
                 <br><br>
-                <li><img class="social  mr-0 pl-5" src="{% static 'pf/images/facebook.png' %}"></li>
-                <i className="fa fa-envelope" aria-hidden="true"/>
+                <li><img class="social mr-0 pl-5 ml-1" src="{% static 'pf/images/gmail.png' %}"></li>
+                <i aria-hidden="true" className="fa fa-envelope"/>
                 nishant.shah0806@gmail.com
-                </li><br>
-            </div>
+            </ul>
+            <br>
         </div>
     </div>
-<!--</div>-->
-<!--</div>-->
-
+</div>
 
 {% endblock content %}

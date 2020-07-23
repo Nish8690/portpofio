@@ -1,4 +1,5 @@
 from django_mongoengine import mongo_admin as admin
+
 from .models import *
 
 # Register your models here.
