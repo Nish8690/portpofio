@@ -77,10 +77,7 @@ body{
   padding: 8px;
 }
 
-.social i {
 
- text-align:right;
-}
 
 /* ABOUTME PAGE */
 #profile-wrapper{
@@ -131,16 +128,18 @@ body{
   margin-top: 30px
   margin: auto;
 }
+
 .contact-grid i {
 display:initial;
   font-size: 20px;
   padding-left: 1rem;
   text-align:justify;
 }
+
 .social{
     display: inline-block;
-    padding-right: 10%;
-    padding-left: 10%;
+    padding-right: 8%;
+    padding-left: 8%;
     margin: 55px;
     margin-bottom:0;
     margin-top:15px;
@@ -150,4 +149,13 @@ display:initial;
 	list-style-type:links;
 	display: inline-block;
 	color: white;
+}
+
+.social{
+	width:60px;
+	height: 35px;
+}
+
+.social i {
+ text-align:right;
 }
