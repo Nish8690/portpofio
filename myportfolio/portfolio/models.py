@@ -18,11 +18,14 @@ from django.db import models
 
 # Create your models here.
 class Project(models.Model):
-    proj_id = models.IntegerField()
+
+    proj_id = models.AutoField
     proj_name = models.CharField(max_length=200)
-    # file=fields.FileField()
-    # proj_desc = fields.EmbeddedDocumentField(Projdescription)
-    comments = models.CharField(max_length=400)
+    category = models.CharField(max_length=50,default= "")
+    proj_desc = models.CharField(max_length=400, default="")
+    proj_image=models.ImageField(default="")
+    proj_file=models.FileField(default=None,upload_to='pf/images')
+    pub_date = models.DateField(default=None)
 
 
     # objects = ProjectManager()
