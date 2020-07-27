@@ -22,7 +22,7 @@ def projects(request):
     # context={'project_name': proj_name}
 
     allProjs=[]
-    catprojs = Project.objects.values('category','id')
+    catprojs = Project.objects.values('category')
     cats={item['category'] for item in catprojs}
     for cat in cats:
         proj=Project.objects.filter(category=cat)
