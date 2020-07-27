@@ -39,9 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework_mongoengine',
-    'django_mongoengine',
-    'django_mongoengine.mongo_auth',
-    'django_mongoengine.mongo_admin',
+    # 'django_mongoengine',
+    # 'django_mongoengine.mongo_auth',
+    # 'django_mongoengine.mongo_admin',
     'portfolio'
 ]
 
@@ -75,28 +75,28 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'myportfolio.wsgi.application'
 
-MONGOADMIN_OVERRIDE_ADMIN = True
-
-MONGODB_DATABASES = {
-    'default': {'name': 'pf'}
-}
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'pf',
-    }
-}
-
+# MONGOADMIN_OVERRIDE_ADMIN = True
+#
+# MONGODB_DATABASES = {
+#     'default': {'name': 'pf'}
+# }
+#
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'djongo',
+#         'NAME': 'pf',
+#     }
+# }
+# #
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
 
 
 # Password validation
