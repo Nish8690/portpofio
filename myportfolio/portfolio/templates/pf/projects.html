@@ -6,8 +6,10 @@
 <style>
           .col-md-3
           {
-          display: inline-block;
-          margin-left:-4px;
+            display: inline-block;
+            margin-left: 25px;
+            height: 365px;
+            width: 270px;
           }
 
           .carousel-indicators .active {
@@ -15,11 +17,18 @@
             }
 
           .col-md-3 img{
-
-            width: 50%;
-            height: 50%;
+            width: 260px;
+            /* height: 122%; */
             margin: auto;
-            margin-top: 11%;
+             margin-left: 13px;
+             margin-right: 13px;
+            margin-top: 4%;
+            word-break: break-all;
+            word-break: break-all;
+<!--            width: %;-->
+<!--            height: 50%;-->
+<!--            margin: auto;-->
+<!--            margin-top: 11%;-->
           }
 
           body .carousel-indicator li{
@@ -74,8 +83,9 @@
             <img src='/media/{{i.proj_image}}' class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">{{i.proj_name}}</h5>
-              <p class="card-text">{{i.proj_desc}}</p>
-              <button id="pr{{i.id}}" class="btn btn-primary cart">Add To Cart</button>
+              <p class="card-text">{{i.proj_desc}}</p><br>
+              <a id="pr{{i.id}}" class="btn btn-primary cart" style="margin-left:5px;"  href="{{i.proj_link1}}">Code Link</a>
+               <a class="btn btn-primary cart" style="margin-left:30px;" href="{{i.proj_link2}}" >Demo Link</a>
             </div>
           </div>
         </div>
