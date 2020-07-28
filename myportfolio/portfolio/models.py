@@ -25,7 +25,9 @@ class Project(models.Model):
     proj_desc = models.CharField(max_length=400, default="")
     proj_image=models.ImageField(default="")
     proj_file=models.FileField(default=None,upload_to='pf/images')
-    pub_date = models.DateField(default=None)
+    pub_date = models.DateField(max_length=200,default=None)
+    proj_link1 = models.URLField(default=None, max_length=200)
+    proj_link2 = models.URLField(default=None, max_length=200)
 
 
     # objects = ProjectManager()
