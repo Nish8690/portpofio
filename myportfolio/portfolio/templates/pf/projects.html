@@ -18,7 +18,7 @@
 
           .col-md-3 img{
             width: 260px;
-            /* height: 122%; */
+            max-height: 155px;
             margin: auto;
              margin-left: 13px;
              margin-right: 13px;
@@ -82,8 +82,8 @@
           <div class="card" style="width: 18rem;">
             <img src='/media/{{i.proj_image}}' class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">{{i.proj_name}}</h5>
-              <p class="card-text">{{i.proj_desc}}</p><br>
+              <h5 class="card-title">{{i.proj_name|slice:"0:20"}}..</h5>
+              <p class="card-text">{{i.proj_desc|slice:"0:60"}}..</p><br>
               <a id="pr{{i.id}}" class="btn btn-primary cart" style="margin-left:5px;"  href="{{i.proj_link1}}">Code Link</a>
                <a class="btn btn-primary cart" style="margin-left:30px;" href="{{i.proj_link2}}" >Demo Link</a>
             </div>
