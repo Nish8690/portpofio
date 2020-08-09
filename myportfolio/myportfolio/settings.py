@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     # 'django_mongoengine',
     # 'django_mongoengine.mongo_auth',
     # 'django_mongoengine.mongo_admin',
-    'portfolio'
+    'portfolio',
+    'covid'
 ]
 
 MIDDLEWARE = [
@@ -140,6 +141,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "portfolio", "static"),
+    os.path.join(BASE_DIR, "covid", "static"),
 )
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

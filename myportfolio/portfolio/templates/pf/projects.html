@@ -2,6 +2,7 @@
 
 {% load static %}
 {% block title%}PROJECTS{% endblock title%}
+{% block projectsactive %} active {% endblock projectsactive %}
 {% block content %}
 <style>
           .col-md-3
@@ -82,14 +83,14 @@
           <div class="card" style="width: 18rem;">
             <img src='/media/{{i.proj_image}}' class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">{{i.proj_name|slice:"0:20"}}..</h5>
-              <p class="card-text">{{i.proj_desc|slice:"0:60"}}..</p><br>
+              <h5 class="card-title">{{i.proj_name|slice:"0:20"}} ...</h5>
+              <p class="card-text">{{i.proj_desc|slice:"0:60"}} ...</p><br>
               <a id="pr{{i.id}}" class="btn btn-primary cart" style="margin-left:5px;"  href="{{i.proj_link1}}">Code Link</a>
                <a class="btn btn-primary cart" style="margin-left:30px;" href="{{i.proj_link2}}" >Demo Link</a>
             </div>
           </div>
         </div>
-        {% if forloop.counter|divisibleby:4 and forloop.counter > 0 and not forloop.last %}
+        {% if forloop.counter|divisibleby:3 and forloop.counter > 0 and not forloop.last %}
       </div><div class="carousel-item">
         {% endif %}
 
